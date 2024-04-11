@@ -86,12 +86,13 @@
             // dataGridViewOrder
             // 
             dataGridViewOrder.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewOrder.Enabled = false;
             dataGridViewOrder.Location = new Point(12, 57);
             dataGridViewOrder.Name = "dataGridViewOrder";
+            dataGridViewOrder.ReadOnly = true;
             dataGridViewOrder.Size = new Size(776, 200);
             dataGridViewOrder.TabIndex = 0;
             dataGridViewOrder.TabStop = false;
+            dataGridViewOrder.RowHeaderMouseClick += dataGridViewOrder_RowHeaderMouseClick;
             // 
             // btnExit
             // 

@@ -46,5 +46,13 @@ namespace Presentation
             PeopleServices pS = new PeopleServices();
             dataGridViewPeople.DataSource = pS.GetAll();
         }
+
+        private void dataGridViewPeople_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            textBoxID.Text = dataGridViewPeople.Rows[e.RowIndex].Cells[4].Value.ToString();
+            textBoxFname.Text = dataGridViewPeople.Rows[e.RowIndex].Cells[0].Value.ToString();
+            textBoxLname.Text = dataGridViewPeople.Rows[e.RowIndex].Cells[1].Value.ToString();
+            textBoxTitle.Text = dataGridViewPeople.Rows[e.RowIndex].Cells[2].Value.ToString();
+        }
     }
 }

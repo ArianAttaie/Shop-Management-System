@@ -46,5 +46,10 @@ namespace Presentation
             OrderServices oS = new OrderServices();
             dataGridViewOrder.DataSource = oS.GetAll();
         }
+
+        private void dataGridViewOrder_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            textBoxID.Text = dataGridViewOrder.Rows[e.RowIndex].Cells[5].Value.ToString();
+        }
     }
 }

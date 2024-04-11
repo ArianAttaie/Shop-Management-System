@@ -75,12 +75,13 @@
             // dataGridViewPeople
             // 
             dataGridViewPeople.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewPeople.Enabled = false;
             dataGridViewPeople.Location = new Point(12, 57);
             dataGridViewPeople.Name = "dataGridViewPeople";
+            dataGridViewPeople.ReadOnly = true;
             dataGridViewPeople.Size = new Size(776, 200);
             dataGridViewPeople.TabIndex = 0;
             dataGridViewPeople.TabStop = false;
+            dataGridViewPeople.RowHeaderMouseClick += dataGridViewPeople_RowHeaderMouseClick;
             // 
             // textBoxID
             // 
