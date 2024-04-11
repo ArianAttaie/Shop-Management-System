@@ -15,7 +15,7 @@ namespace Presentation
                 MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                Application.Exit();
+                Close();
             }
             else if (result == DialogResult.No)
             {
