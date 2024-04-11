@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            labelCustID = new Label();
             labelID = new Label();
             btnFind = new Button();
-            textBoxCustID = new TextBox();
             textBoxID = new TextBox();
             dataGridView1 = new DataGridView();
             btnExit = new Button();
@@ -40,21 +38,11 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // labelCustID
-            // 
-            labelCustID.AutoSize = true;
-            labelCustID.Font = new Font("Trebuchet MS", 10F);
-            labelCustID.Location = new Point(84, 351);
-            labelCustID.Name = "labelCustID";
-            labelCustID.Size = new Size(102, 18);
-            labelCustID.TabIndex = 0;
-            labelCustID.Text = "Customer's ID :";
-            // 
             // labelID
             // 
             labelID.AutoSize = true;
             labelID.Font = new Font("Trebuchet MS", 10F);
-            labelID.Location = new Point(84, 322);
+            labelID.Location = new Point(106, 337);
             labelID.Name = "labelID";
             labelID.Size = new Size(80, 18);
             labelID.TabIndex = 0;
@@ -68,20 +56,13 @@
             btnFind.Location = new Point(535, 330);
             btnFind.Name = "btnFind";
             btnFind.Size = new Size(90, 31);
-            btnFind.TabIndex = 3;
+            btnFind.TabIndex = 2;
             btnFind.Text = "Find";
             btnFind.UseVisualStyleBackColor = false;
             // 
-            // textBoxCustID
-            // 
-            textBoxCustID.Location = new Point(192, 350);
-            textBoxCustID.Name = "textBoxCustID";
-            textBoxCustID.Size = new Size(202, 23);
-            textBoxCustID.TabIndex = 2;
-            // 
             // textBoxID
             // 
-            textBoxID.Location = new Point(192, 321);
+            textBoxID.Location = new Point(192, 336);
             textBoxID.Name = "textBoxID";
             textBoxID.Size = new Size(202, 23);
             textBoxID.TabIndex = 1;
@@ -140,10 +121,8 @@
             BackColor = SystemColors.Menu;
             ClientSize = new Size(800, 450);
             Controls.Add(btnBack);
-            Controls.Add(labelCustID);
             Controls.Add(labelID);
             Controls.Add(btnFind);
-            Controls.Add(textBoxCustID);
             Controls.Add(textBoxID);
             Controls.Add(dataGridView1);
             Controls.Add(btnExit);
@@ -158,10 +137,8 @@
         }
 
         #endregion
-        private Label labelCustID;
         private Label labelID;
         private Button btnFind;
-        private TextBox textBoxCustID;
         private TextBox textBoxID;
         private DataGridView dataGridView1;
         private Button btnExit;
