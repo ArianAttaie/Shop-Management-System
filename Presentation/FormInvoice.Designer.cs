@@ -31,11 +31,12 @@
             labelID = new Label();
             btnFind = new Button();
             textBoxID = new TextBox();
-            dataGridView1 = new DataGridView();
+            dataGridViewInvoice = new DataGridView();
             btnExit = new Button();
             labelTitle = new Label();
             btnBack = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            btnLoad = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewInvoice).BeginInit();
             SuspendLayout();
             // 
             // labelID
@@ -67,14 +68,14 @@
             textBoxID.Size = new Size(202, 23);
             textBoxID.TabIndex = 1;
             // 
-            // dataGridView1
+            // dataGridViewInvoice
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 57);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(776, 200);
-            dataGridView1.TabIndex = 0;
-            dataGridView1.TabStop = false;
+            dataGridViewInvoice.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewInvoice.Location = new Point(12, 57);
+            dataGridViewInvoice.Name = "dataGridViewInvoice";
+            dataGridViewInvoice.Size = new Size(776, 200);
+            dataGridViewInvoice.TabIndex = 0;
+            dataGridViewInvoice.TabStop = false;
             // 
             // btnExit
             // 
@@ -114,24 +115,38 @@
             btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
+            // btnLoad
+            // 
+            btnLoad.BackColor = SystemColors.ButtonFace;
+            btnLoad.FlatStyle = FlatStyle.Flat;
+            btnLoad.Font = new Font("Trebuchet MS", 9F);
+            btnLoad.Location = new Point(722, 263);
+            btnLoad.Name = "btnLoad";
+            btnLoad.Size = new Size(66, 25);
+            btnLoad.TabIndex = 3;
+            btnLoad.Text = "Load";
+            btnLoad.UseVisualStyleBackColor = false;
+            btnLoad.Click += btnLoad_Click;
+            // 
             // FormInvoice
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Menu;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnLoad);
             Controls.Add(btnBack);
             Controls.Add(labelID);
             Controls.Add(btnFind);
             Controls.Add(textBoxID);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridViewInvoice);
             Controls.Add(btnExit);
             Controls.Add(labelTitle);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormInvoice";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormInvoice";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewInvoice).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -140,9 +155,10 @@
         private Label labelID;
         private Button btnFind;
         private TextBox textBoxID;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewInvoice;
         private Button btnExit;
         private Label labelTitle;
         private Button btnBack;
+        private Button btnLoad;
     }
 }

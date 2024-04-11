@@ -38,7 +38,7 @@
             textBoxCat = new TextBox();
             textBoxName = new TextBox();
             textBoxID = new TextBox();
-            dataGridView1 = new DataGridView();
+            dataGridViewProduct = new DataGridView();
             btnExit = new Button();
             labelTitle = new Label();
             btnBack = new Button();
@@ -46,7 +46,8 @@
             textBoxPrice = new TextBox();
             labelQTY = new Label();
             textBoxQTY = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            btnLoad = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewProduct).BeginInit();
             SuspendLayout();
             // 
             // labelCat
@@ -148,14 +149,14 @@
             textBoxID.Size = new Size(202, 23);
             textBoxID.TabIndex = 1;
             // 
-            // dataGridView1
+            // dataGridViewProduct
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 57);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(776, 200);
-            dataGridView1.TabIndex = 0;
-            dataGridView1.TabStop = false;
+            dataGridViewProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewProduct.Location = new Point(12, 57);
+            dataGridViewProduct.Name = "dataGridViewProduct";
+            dataGridViewProduct.Size = new Size(776, 200);
+            dataGridViewProduct.TabIndex = 0;
+            dataGridViewProduct.TabStop = false;
             // 
             // btnExit
             // 
@@ -229,12 +230,26 @@
             textBoxQTY.Size = new Size(202, 23);
             textBoxQTY.TabIndex = 5;
             // 
+            // btnLoad
+            // 
+            btnLoad.BackColor = SystemColors.ButtonFace;
+            btnLoad.FlatStyle = FlatStyle.Flat;
+            btnLoad.Font = new Font("Trebuchet MS", 9F);
+            btnLoad.Location = new Point(722, 263);
+            btnLoad.Name = "btnLoad";
+            btnLoad.Size = new Size(66, 25);
+            btnLoad.TabIndex = 10;
+            btnLoad.Text = "Load";
+            btnLoad.UseVisualStyleBackColor = false;
+            btnLoad.Click += btnLoad_Click;
+            // 
             // FormProduct
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Menu;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnLoad);
             Controls.Add(labelQTY);
             Controls.Add(textBoxQTY);
             Controls.Add(labelPrice);
@@ -250,14 +265,14 @@
             Controls.Add(textBoxCat);
             Controls.Add(textBoxName);
             Controls.Add(textBoxID);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridViewProduct);
             Controls.Add(btnExit);
             Controls.Add(labelTitle);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormProduct";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormProduct";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewProduct).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -273,7 +288,7 @@
         private TextBox textBoxCat;
         private TextBox textBoxName;
         private TextBox textBoxID;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewProduct;
         private Button btnExit;
         private Label labelTitle;
         private Button btnBack;
@@ -281,5 +296,6 @@
         private TextBox textBoxPrice;
         private Label labelQTY;
         private TextBox textBoxQTY;
+        private Button btnLoad;
     }
 }

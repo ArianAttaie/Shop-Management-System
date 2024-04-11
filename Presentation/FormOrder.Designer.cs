@@ -32,11 +32,12 @@
             labelID = new Label();
             btnAccept = new Button();
             textBoxID = new TextBox();
-            dataGridView1 = new DataGridView();
+            dataGridViewOrder = new DataGridView();
             btnExit = new Button();
             labelTitle = new Label();
             btnDecline = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            btnLoad = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewOrder).BeginInit();
             SuspendLayout();
             // 
             // btnBack
@@ -71,7 +72,7 @@
             btnAccept.Location = new Point(535, 315);
             btnAccept.Name = "btnAccept";
             btnAccept.Size = new Size(90, 31);
-            btnAccept.TabIndex = 41;
+            btnAccept.TabIndex = 2;
             btnAccept.Text = "Accept";
             btnAccept.UseVisualStyleBackColor = false;
             // 
@@ -80,16 +81,16 @@
             textBoxID.Location = new Point(192, 336);
             textBoxID.Name = "textBoxID";
             textBoxID.Size = new Size(202, 23);
-            textBoxID.TabIndex = 39;
+            textBoxID.TabIndex = 1;
             // 
-            // dataGridView1
+            // dataGridViewOrder
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 57);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(776, 200);
-            dataGridView1.TabIndex = 0;
-            dataGridView1.TabStop = false;
+            dataGridViewOrder.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewOrder.Location = new Point(12, 57);
+            dataGridViewOrder.Name = "dataGridViewOrder";
+            dataGridViewOrder.Size = new Size(776, 200);
+            dataGridViewOrder.TabIndex = 0;
+            dataGridViewOrder.TabStop = false;
             // 
             // btnExit
             // 
@@ -123,9 +124,22 @@
             btnDecline.Location = new Point(535, 352);
             btnDecline.Name = "btnDecline";
             btnDecline.Size = new Size(90, 31);
-            btnDecline.TabIndex = 45;
+            btnDecline.TabIndex = 3;
             btnDecline.Text = "Decline";
             btnDecline.UseVisualStyleBackColor = false;
+            // 
+            // btnLoad
+            // 
+            btnLoad.BackColor = SystemColors.ButtonFace;
+            btnLoad.FlatStyle = FlatStyle.Flat;
+            btnLoad.Font = new Font("Trebuchet MS", 9F);
+            btnLoad.Location = new Point(722, 263);
+            btnLoad.Name = "btnLoad";
+            btnLoad.Size = new Size(66, 25);
+            btnLoad.TabIndex = 4;
+            btnLoad.Text = "Load";
+            btnLoad.UseVisualStyleBackColor = false;
+            btnLoad.Click += btnLoad_Click;
             // 
             // FormOrder
             // 
@@ -133,19 +147,20 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Menu;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnLoad);
             Controls.Add(btnDecline);
             Controls.Add(btnBack);
             Controls.Add(labelID);
             Controls.Add(btnAccept);
             Controls.Add(textBoxID);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridViewOrder);
             Controls.Add(btnExit);
             Controls.Add(labelTitle);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormOrder";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormOrder";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewOrder).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -156,9 +171,10 @@
         private Label labelID;
         private Button btnAccept;
         private TextBox textBoxID;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewOrder;
         private Button btnExit;
         private Label labelTitle;
         private Button btnDecline;
+        private Button btnLoad;
     }
 }

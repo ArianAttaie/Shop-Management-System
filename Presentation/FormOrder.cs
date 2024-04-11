@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,7 +26,7 @@ namespace Presentation
                 MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                Close();
+                Application.Exit();
             }
             else if (result == DialogResult.No)
             {
@@ -38,6 +39,12 @@ namespace Presentation
             Form1 formMain = new Form1();
             formMain.Visible = true;
             Visible = false;
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            OrderServices oS = new OrderServices();
+            dataGridViewOrder.DataSource = oS.GetAll();
         }
     }
 }
