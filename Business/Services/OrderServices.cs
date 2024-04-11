@@ -45,6 +45,8 @@ namespace Business.Services
             People pep = FakeDbContext.people.Where(e => e.FullName == order.CustFullName).FirstOrDefault();
             Product prdct = FakeDbContext.products.Where(e => e.Name == order.PrdctName).FirstOrDefault();
 
+            prdct.Quantity = prdct.Quantity - order.QTY;
+
             string custFullName = order.CustFullName;
             long custID = pep.ID;
             string prdctName = order.PrdctName;
