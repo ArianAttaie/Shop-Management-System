@@ -59,6 +59,7 @@
             btnExit.TabStop = false;
             btnExit.Text = "X";
             btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += btnExit_Click;
             // 
             // labelTitle
             // 
