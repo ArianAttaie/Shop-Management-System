@@ -42,6 +42,8 @@
             btnExit = new Button();
             labelTitle = new Label();
             btnBack = new Button();
+            labelPrice = new Label();
+            textBoxPrice = new TextBox();
             labelQTY = new Label();
             textBoxQTY = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -51,7 +53,7 @@
             // 
             labelCat.AutoSize = true;
             labelCat.Font = new Font("Trebuchet MS", 10F);
-            labelCat.Location = new Point(103, 351);
+            labelCat.Location = new Point(103, 338);
             labelCat.Name = "labelCat";
             labelCat.Size = new Size(73, 18);
             labelCat.TabIndex = 0;
@@ -61,7 +63,7 @@
             // 
             labelName.AutoSize = true;
             labelName.Font = new Font("Trebuchet MS", 10F);
-            labelName.Location = new Point(103, 322);
+            labelName.Location = new Point(103, 309);
             labelName.Name = "labelName";
             labelName.Size = new Size(52, 18);
             labelName.TabIndex = 0;
@@ -71,7 +73,7 @@
             // 
             labelID.AutoSize = true;
             labelID.Font = new Font("Trebuchet MS", 10F);
-            labelID.Location = new Point(103, 293);
+            labelID.Location = new Point(103, 280);
             labelID.Name = "labelID";
             labelID.Size = new Size(83, 18);
             labelID.TabIndex = 0;
@@ -85,7 +87,7 @@
             btnDelete.Location = new Point(535, 390);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(90, 31);
-            btnDelete.TabIndex = 8;
+            btnDelete.TabIndex = 9;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
             // 
@@ -97,7 +99,7 @@
             btnUpdate.Location = new Point(535, 353);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(90, 31);
-            btnUpdate.TabIndex = 7;
+            btnUpdate.TabIndex = 8;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = false;
             // 
@@ -109,7 +111,7 @@
             btnInsert.Location = new Point(535, 316);
             btnInsert.Name = "btnInsert";
             btnInsert.Size = new Size(90, 31);
-            btnInsert.TabIndex = 6;
+            btnInsert.TabIndex = 7;
             btnInsert.Text = "Insert";
             btnInsert.UseVisualStyleBackColor = false;
             // 
@@ -121,27 +123,27 @@
             btnFind.Location = new Point(535, 279);
             btnFind.Name = "btnFind";
             btnFind.Size = new Size(90, 31);
-            btnFind.TabIndex = 5;
+            btnFind.TabIndex = 6;
             btnFind.Text = "Find";
             btnFind.UseVisualStyleBackColor = false;
             // 
             // textBoxCat
             // 
-            textBoxCat.Location = new Point(192, 350);
+            textBoxCat.Location = new Point(192, 337);
             textBoxCat.Name = "textBoxCat";
             textBoxCat.Size = new Size(202, 23);
             textBoxCat.TabIndex = 3;
             // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(192, 321);
+            textBoxName.Location = new Point(192, 308);
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new Size(202, 23);
             textBoxName.TabIndex = 2;
             // 
             // textBoxID
             // 
-            textBoxID.Location = new Point(192, 292);
+            textBoxID.Location = new Point(192, 279);
             textBoxID.Name = "textBoxID";
             textBoxID.Size = new Size(202, 23);
             textBoxID.TabIndex = 1;
@@ -193,11 +195,28 @@
             btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
+            // labelPrice
+            // 
+            labelPrice.AutoSize = true;
+            labelPrice.Font = new Font("Trebuchet MS", 10F);
+            labelPrice.Location = new Point(103, 370);
+            labelPrice.Name = "labelPrice";
+            labelPrice.Size = new Size(79, 18);
+            labelPrice.TabIndex = 0;
+            labelPrice.Text = "Unit Price :";
+            // 
+            // textBoxPrice
+            // 
+            textBoxPrice.Location = new Point(192, 369);
+            textBoxPrice.Name = "textBoxPrice";
+            textBoxPrice.Size = new Size(202, 23);
+            textBoxPrice.TabIndex = 4;
+            // 
             // labelQTY
             // 
             labelQTY.AutoSize = true;
             labelQTY.Font = new Font("Trebuchet MS", 10F);
-            labelQTY.Location = new Point(103, 383);
+            labelQTY.Location = new Point(103, 399);
             labelQTY.Name = "labelQTY";
             labelQTY.Size = new Size(73, 18);
             labelQTY.TabIndex = 0;
@@ -205,10 +224,10 @@
             // 
             // textBoxQTY
             // 
-            textBoxQTY.Location = new Point(192, 382);
+            textBoxQTY.Location = new Point(192, 398);
             textBoxQTY.Name = "textBoxQTY";
             textBoxQTY.Size = new Size(202, 23);
-            textBoxQTY.TabIndex = 4;
+            textBoxQTY.TabIndex = 5;
             // 
             // FormProduct
             // 
@@ -218,6 +237,8 @@
             ClientSize = new Size(800, 450);
             Controls.Add(labelQTY);
             Controls.Add(textBoxQTY);
+            Controls.Add(labelPrice);
+            Controls.Add(textBoxPrice);
             Controls.Add(btnBack);
             Controls.Add(labelCat);
             Controls.Add(labelName);
@@ -256,6 +277,8 @@
         private Button btnExit;
         private Label labelTitle;
         private Button btnBack;
+        private Label labelPrice;
+        private TextBox textBoxPrice;
         private Label labelQTY;
         private TextBox textBoxQTY;
     }
