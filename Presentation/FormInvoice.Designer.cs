@@ -28,63 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label4 = new Label();
-            label3 = new Label();
-            button2 = new Button();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
+            labelCustID = new Label();
+            labelID = new Label();
+            btnFind = new Button();
+            textBoxCustID = new TextBox();
+            textBoxID = new TextBox();
             dataGridView1 = new DataGridView();
-            button1 = new Button();
-            label1 = new Label();
-            button6 = new Button();
+            btnExit = new Button();
+            labelTitle = new Label();
+            btnBack = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // label4
+            // labelCustID
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Trebuchet MS", 10F);
-            label4.Location = new Point(84, 351);
-            label4.Name = "label4";
-            label4.Size = new Size(102, 18);
-            label4.TabIndex = 34;
-            label4.Text = "Customer's ID :";
+            labelCustID.AutoSize = true;
+            labelCustID.Font = new Font("Trebuchet MS", 10F);
+            labelCustID.Location = new Point(84, 351);
+            labelCustID.Name = "labelCustID";
+            labelCustID.Size = new Size(102, 18);
+            labelCustID.TabIndex = 0;
+            labelCustID.Text = "Customer's ID :";
             // 
-            // label3
+            // labelID
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Trebuchet MS", 10F);
-            label3.Location = new Point(84, 322);
-            label3.Name = "label3";
-            label3.Size = new Size(80, 18);
-            label3.TabIndex = 33;
-            label3.Text = "Invoice ID :";
+            labelID.AutoSize = true;
+            labelID.Font = new Font("Trebuchet MS", 10F);
+            labelID.Location = new Point(84, 322);
+            labelID.Name = "labelID";
+            labelID.Size = new Size(80, 18);
+            labelID.TabIndex = 0;
+            labelID.Text = "Invoice ID :";
             // 
-            // button2
+            // btnFind
             // 
-            button2.BackColor = SystemColors.ButtonFace;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Trebuchet MS", 11F);
-            button2.Location = new Point(535, 330);
-            button2.Name = "button2";
-            button2.Size = new Size(90, 31);
-            button2.TabIndex = 28;
-            button2.Text = "Find";
-            button2.UseVisualStyleBackColor = false;
+            btnFind.BackColor = SystemColors.ButtonFace;
+            btnFind.FlatStyle = FlatStyle.Flat;
+            btnFind.Font = new Font("Trebuchet MS", 11F);
+            btnFind.Location = new Point(535, 330);
+            btnFind.Name = "btnFind";
+            btnFind.Size = new Size(90, 31);
+            btnFind.TabIndex = 3;
+            btnFind.Text = "Find";
+            btnFind.UseVisualStyleBackColor = false;
             // 
-            // textBox3
+            // textBoxCustID
             // 
-            textBox3.Location = new Point(192, 350);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(202, 23);
-            textBox3.TabIndex = 26;
+            textBoxCustID.Location = new Point(192, 350);
+            textBoxCustID.Name = "textBoxCustID";
+            textBoxCustID.Size = new Size(202, 23);
+            textBoxCustID.TabIndex = 2;
             // 
-            // textBox2
+            // textBoxID
             // 
-            textBox2.Location = new Point(192, 321);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(202, 23);
-            textBox2.TabIndex = 25;
+            textBoxID.Location = new Point(192, 321);
+            textBoxID.Name = "textBoxID";
+            textBoxID.Size = new Size(202, 23);
+            textBoxID.TabIndex = 1;
             // 
             // dataGridView1
             // 
@@ -92,43 +92,44 @@
             dataGridView1.Location = new Point(12, 57);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(776, 200);
-            dataGridView1.TabIndex = 23;
+            dataGridView1.TabIndex = 0;
+            dataGridView1.TabStop = false;
             // 
-            // button1
+            // btnExit
             // 
-            button1.BackColor = Color.Firebrick;
-            button1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            button1.ForeColor = Color.MistyRose;
-            button1.Location = new Point(754, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(34, 39);
-            button1.TabIndex = 22;
-            button1.TabStop = false;
-            button1.Text = "X";
-            button1.UseVisualStyleBackColor = false;
+            btnExit.BackColor = Color.Firebrick;
+            btnExit.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            btnExit.ForeColor = Color.MistyRose;
+            btnExit.Location = new Point(754, 12);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(34, 39);
+            btnExit.TabIndex = 0;
+            btnExit.TabStop = false;
+            btnExit.Text = "X";
+            btnExit.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // labelTitle
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Trebuchet MS", 18F);
-            label1.Location = new Point(332, 17);
-            label1.Name = "label1";
-            label1.Size = new Size(136, 29);
-            label1.TabIndex = 21;
-            label1.Text = "Invoice List";
+            labelTitle.AutoSize = true;
+            labelTitle.Font = new Font("Trebuchet MS", 18F);
+            labelTitle.Location = new Point(332, 17);
+            labelTitle.Name = "labelTitle";
+            labelTitle.Size = new Size(136, 29);
+            labelTitle.TabIndex = 0;
+            labelTitle.Text = "Invoice List";
             // 
-            // button6
+            // btnBack
             // 
-            button6.BackColor = Color.OliveDrab;
-            button6.Font = new Font("Stencil", 16F, FontStyle.Bold);
-            button6.ForeColor = Color.Ivory;
-            button6.Location = new Point(12, 12);
-            button6.Name = "button6";
-            button6.Size = new Size(39, 39);
-            button6.TabIndex = 35;
-            button6.TabStop = false;
-            button6.Text = "←";
-            button6.UseVisualStyleBackColor = false;
+            btnBack.BackColor = Color.OliveDrab;
+            btnBack.Font = new Font("Stencil", 16F, FontStyle.Bold);
+            btnBack.ForeColor = Color.Ivory;
+            btnBack.Location = new Point(12, 12);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(39, 39);
+            btnBack.TabIndex = 0;
+            btnBack.TabStop = false;
+            btnBack.Text = "←";
+            btnBack.UseVisualStyleBackColor = false;
             // 
             // FormInvoice
             // 
@@ -136,15 +137,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Menu;
             ClientSize = new Size(800, 450);
-            Controls.Add(button6);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(button2);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
+            Controls.Add(btnBack);
+            Controls.Add(labelCustID);
+            Controls.Add(labelID);
+            Controls.Add(btnFind);
+            Controls.Add(textBoxCustID);
+            Controls.Add(textBoxID);
             Controls.Add(dataGridView1);
-            Controls.Add(button1);
-            Controls.Add(label1);
+            Controls.Add(btnExit);
+            Controls.Add(labelTitle);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormInvoice";
             Text = "FormInvoice";
@@ -154,14 +155,14 @@
         }
 
         #endregion
-        private Label label4;
-        private Label label3;
-        private Button button2;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private Label labelCustID;
+        private Label labelID;
+        private Button btnFind;
+        private TextBox textBoxCustID;
+        private TextBox textBoxID;
         private DataGridView dataGridView1;
-        private Button button1;
-        private Label label1;
-        private Button button6;
+        private Button btnExit;
+        private Label labelTitle;
+        private Button btnBack;
     }
 }

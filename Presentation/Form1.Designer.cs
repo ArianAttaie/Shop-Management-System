@@ -28,88 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
+            labelTitle = new Label();
+            btnExit = new Button();
+            btnPeople = new Button();
+            btnProducts = new Button();
+            btnOrders = new Button();
+            btnInvoices = new Button();
             SuspendLayout();
             // 
-            // label1
+            // labelTitle
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Trebuchet MS", 18F);
-            label1.Location = new Point(252, 22);
-            label1.Name = "label1";
-            label1.Size = new Size(292, 29);
-            label1.TabIndex = 0;
-            label1.Text = "Shop Management System";
+            labelTitle.AutoSize = true;
+            labelTitle.Font = new Font("Trebuchet MS", 18F);
+            labelTitle.Location = new Point(252, 22);
+            labelTitle.Name = "labelTitle";
+            labelTitle.Size = new Size(292, 29);
+            labelTitle.TabIndex = 0;
+            labelTitle.Text = "Shop Management System";
             // 
-            // button1
+            // btnExit
             // 
-            button1.BackColor = Color.Firebrick;
-            button1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            button1.ForeColor = Color.MistyRose;
-            button1.Location = new Point(754, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(34, 39);
-            button1.TabIndex = 1;
-            button1.TabStop = false;
-            button1.Text = "X";
-            button1.UseVisualStyleBackColor = false;
+            btnExit.BackColor = Color.Firebrick;
+            btnExit.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            btnExit.ForeColor = Color.MistyRose;
+            btnExit.Location = new Point(754, 12);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(34, 39);
+            btnExit.TabIndex = 0;
+            btnExit.TabStop = false;
+            btnExit.Text = "X";
+            btnExit.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnPeople
             // 
-            button2.BackColor = SystemColors.HighlightText;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Trebuchet MS", 14F);
-            button2.Location = new Point(325, 140);
-            button2.Name = "button2";
-            button2.Size = new Size(150, 36);
-            button2.TabIndex = 2;
-            button2.TabStop = false;
-            button2.Text = "People";
-            button2.UseVisualStyleBackColor = false;
+            btnPeople.BackColor = SystemColors.HighlightText;
+            btnPeople.FlatStyle = FlatStyle.Flat;
+            btnPeople.Font = new Font("Trebuchet MS", 14F);
+            btnPeople.Location = new Point(325, 140);
+            btnPeople.Name = "btnPeople";
+            btnPeople.Size = new Size(150, 36);
+            btnPeople.TabIndex = 0;
+            btnPeople.TabStop = false;
+            btnPeople.Text = "People";
+            btnPeople.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnProducts
             // 
-            button3.BackColor = SystemColors.HighlightText;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Trebuchet MS", 14F);
-            button3.Location = new Point(325, 182);
-            button3.Name = "button3";
-            button3.Size = new Size(150, 36);
-            button3.TabIndex = 3;
-            button3.TabStop = false;
-            button3.Text = "Products";
-            button3.UseVisualStyleBackColor = false;
+            btnProducts.BackColor = SystemColors.HighlightText;
+            btnProducts.FlatStyle = FlatStyle.Flat;
+            btnProducts.Font = new Font("Trebuchet MS", 14F);
+            btnProducts.Location = new Point(325, 182);
+            btnProducts.Name = "btnProducts";
+            btnProducts.Size = new Size(150, 36);
+            btnProducts.TabIndex = 0;
+            btnProducts.TabStop = false;
+            btnProducts.Text = "Products";
+            btnProducts.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnOrders
             // 
-            button4.BackColor = SystemColors.HighlightText;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Trebuchet MS", 14F);
-            button4.Location = new Point(325, 224);
-            button4.Name = "button4";
-            button4.Size = new Size(150, 36);
-            button4.TabIndex = 4;
-            button4.TabStop = false;
-            button4.Text = "Orders";
-            button4.UseVisualStyleBackColor = false;
+            btnOrders.BackColor = SystemColors.HighlightText;
+            btnOrders.FlatStyle = FlatStyle.Flat;
+            btnOrders.Font = new Font("Trebuchet MS", 14F);
+            btnOrders.Location = new Point(325, 224);
+            btnOrders.Name = "btnOrders";
+            btnOrders.Size = new Size(150, 36);
+            btnOrders.TabIndex = 0;
+            btnOrders.TabStop = false;
+            btnOrders.Text = "Orders";
+            btnOrders.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnInvoices
             // 
-            button5.BackColor = SystemColors.HighlightText;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Trebuchet MS", 14F);
-            button5.Location = new Point(325, 266);
-            button5.Name = "button5";
-            button5.Size = new Size(150, 36);
-            button5.TabIndex = 5;
-            button5.TabStop = false;
-            button5.Text = "Invoice";
-            button5.UseVisualStyleBackColor = false;
+            btnInvoices.BackColor = SystemColors.HighlightText;
+            btnInvoices.FlatStyle = FlatStyle.Flat;
+            btnInvoices.Font = new Font("Trebuchet MS", 14F);
+            btnInvoices.Location = new Point(325, 266);
+            btnInvoices.Name = "btnInvoices";
+            btnInvoices.Size = new Size(150, 36);
+            btnInvoices.TabIndex = 0;
+            btnInvoices.TabStop = false;
+            btnInvoices.Text = "Invoices";
+            btnInvoices.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -117,12 +117,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Menu;
             ClientSize = new Size(800, 450);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(label1);
+            Controls.Add(btnInvoices);
+            Controls.Add(btnOrders);
+            Controls.Add(btnProducts);
+            Controls.Add(btnPeople);
+            Controls.Add(btnExit);
+            Controls.Add(labelTitle);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
@@ -135,11 +135,11 @@
         }
 
         #endregion
-        private Label label1;
-        private Button button1;
-        private Button button2;
-        private Button button5;
-        private Button button4;
-        private Button button3;
+        private Label labelTitle;
+        private Button btnExit;
+        private Button btnPeople;
+        private Button btnInvoices;
+        private Button btnOrders;
+        private Button btnProducts;
     }
 }

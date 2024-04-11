@@ -28,121 +28,123 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            labelCat = new Label();
+            labelName = new Label();
+            labelID = new Label();
+            btnDelete = new Button();
+            btnUpdate = new Button();
+            btnInsert = new Button();
+            btnFind = new Button();
+            textBoxCat = new TextBox();
+            textBoxName = new TextBox();
+            textBoxID = new TextBox();
             dataGridView1 = new DataGridView();
-            button1 = new Button();
-            label1 = new Label();
-            button6 = new Button();
+            btnExit = new Button();
+            labelTitle = new Label();
+            btnBack = new Button();
+            labelQTY = new Label();
+            textBoxQTY = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // label4
+            // labelCat
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Trebuchet MS", 10F);
-            label4.Location = new Point(113, 366);
-            label4.Name = "label4";
-            label4.Size = new Size(73, 18);
-            label4.TabIndex = 34;
-            label4.Text = "Category :";
+            labelCat.AutoSize = true;
+            labelCat.Font = new Font("Trebuchet MS", 10F);
+            labelCat.Location = new Point(103, 351);
+            labelCat.Name = "labelCat";
+            labelCat.Size = new Size(73, 18);
+            labelCat.TabIndex = 0;
+            labelCat.Text = "Category :";
             // 
-            // label3
+            // labelName
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Trebuchet MS", 10F);
-            label3.Location = new Point(113, 338);
-            label3.Name = "label3";
-            label3.Size = new Size(52, 18);
-            label3.TabIndex = 33;
-            label3.Text = "Name :";
+            labelName.AutoSize = true;
+            labelName.Font = new Font("Trebuchet MS", 10F);
+            labelName.Location = new Point(103, 322);
+            labelName.Name = "labelName";
+            labelName.Size = new Size(52, 18);
+            labelName.TabIndex = 0;
+            labelName.Text = "Name :";
             // 
-            // label2
+            // labelID
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Trebuchet MS", 10F);
-            label2.Location = new Point(113, 309);
-            label2.Name = "label2";
-            label2.Size = new Size(30, 18);
-            label2.TabIndex = 32;
-            label2.Text = "ID :";
+            labelID.AutoSize = true;
+            labelID.Font = new Font("Trebuchet MS", 10F);
+            labelID.Location = new Point(103, 293);
+            labelID.Name = "labelID";
+            labelID.Size = new Size(83, 18);
+            labelID.TabIndex = 0;
+            labelID.Text = "Product ID :";
             // 
-            // button5
+            // btnDelete
             // 
-            button5.BackColor = SystemColors.ButtonFace;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Trebuchet MS", 11F);
-            button5.Location = new Point(535, 390);
-            button5.Name = "button5";
-            button5.Size = new Size(90, 31);
-            button5.TabIndex = 31;
-            button5.Text = "Delete";
-            button5.UseVisualStyleBackColor = false;
+            btnDelete.BackColor = SystemColors.ButtonFace;
+            btnDelete.FlatStyle = FlatStyle.Flat;
+            btnDelete.Font = new Font("Trebuchet MS", 11F);
+            btnDelete.Location = new Point(535, 390);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(90, 31);
+            btnDelete.TabIndex = 8;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnUpdate
             // 
-            button4.BackColor = SystemColors.ButtonFace;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Trebuchet MS", 11F);
-            button4.Location = new Point(535, 353);
-            button4.Name = "button4";
-            button4.Size = new Size(90, 31);
-            button4.TabIndex = 30;
-            button4.Text = "Update";
-            button4.UseVisualStyleBackColor = false;
+            btnUpdate.BackColor = SystemColors.ButtonFace;
+            btnUpdate.FlatStyle = FlatStyle.Flat;
+            btnUpdate.Font = new Font("Trebuchet MS", 11F);
+            btnUpdate.Location = new Point(535, 353);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(90, 31);
+            btnUpdate.TabIndex = 7;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnInsert
             // 
-            button3.BackColor = SystemColors.ButtonFace;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Trebuchet MS", 11F);
-            button3.Location = new Point(535, 316);
-            button3.Name = "button3";
-            button3.Size = new Size(90, 31);
-            button3.TabIndex = 29;
-            button3.Text = "Insert";
-            button3.UseVisualStyleBackColor = false;
+            btnInsert.BackColor = SystemColors.ButtonFace;
+            btnInsert.FlatStyle = FlatStyle.Flat;
+            btnInsert.Font = new Font("Trebuchet MS", 11F);
+            btnInsert.Location = new Point(535, 316);
+            btnInsert.Name = "btnInsert";
+            btnInsert.Size = new Size(90, 31);
+            btnInsert.TabIndex = 6;
+            btnInsert.Text = "Insert";
+            btnInsert.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnFind
             // 
-            button2.BackColor = SystemColors.ButtonFace;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Trebuchet MS", 11F);
-            button2.Location = new Point(535, 279);
-            button2.Name = "button2";
-            button2.Size = new Size(90, 31);
-            button2.TabIndex = 28;
-            button2.Text = "Find";
-            button2.UseVisualStyleBackColor = false;
+            btnFind.BackColor = SystemColors.ButtonFace;
+            btnFind.FlatStyle = FlatStyle.Flat;
+            btnFind.Font = new Font("Trebuchet MS", 11F);
+            btnFind.Location = new Point(535, 279);
+            btnFind.Name = "btnFind";
+            btnFind.Size = new Size(90, 31);
+            btnFind.TabIndex = 5;
+            btnFind.Text = "Find";
+            btnFind.UseVisualStyleBackColor = false;
             // 
-            // textBox3
+            // textBoxCat
             // 
-            textBox3.Location = new Point(192, 366);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(202, 23);
-            textBox3.TabIndex = 26;
+            textBoxCat.Location = new Point(192, 350);
+            textBoxCat.Name = "textBoxCat";
+            textBoxCat.Size = new Size(202, 23);
+            textBoxCat.TabIndex = 3;
             // 
-            // textBox2
+            // textBoxName
             // 
-            textBox2.Location = new Point(192, 337);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(202, 23);
-            textBox2.TabIndex = 25;
+            textBoxName.Location = new Point(192, 321);
+            textBoxName.Name = "textBoxName";
+            textBoxName.Size = new Size(202, 23);
+            textBoxName.TabIndex = 2;
             // 
-            // textBox1
+            // textBoxID
             // 
-            textBox1.Location = new Point(192, 308);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(202, 23);
-            textBox1.TabIndex = 24;
+            textBoxID.Location = new Point(192, 292);
+            textBoxID.Name = "textBoxID";
+            textBoxID.Size = new Size(202, 23);
+            textBoxID.TabIndex = 1;
             // 
             // dataGridView1
             // 
@@ -150,43 +152,61 @@
             dataGridView1.Location = new Point(12, 57);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(776, 200);
-            dataGridView1.TabIndex = 23;
+            dataGridView1.TabIndex = 0;
+            dataGridView1.TabStop = false;
             // 
-            // button1
+            // btnExit
             // 
-            button1.BackColor = Color.Firebrick;
-            button1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            button1.ForeColor = Color.MistyRose;
-            button1.Location = new Point(754, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(34, 39);
-            button1.TabIndex = 22;
-            button1.TabStop = false;
-            button1.Text = "X";
-            button1.UseVisualStyleBackColor = false;
+            btnExit.BackColor = Color.Firebrick;
+            btnExit.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            btnExit.ForeColor = Color.MistyRose;
+            btnExit.Location = new Point(754, 12);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(34, 39);
+            btnExit.TabIndex = 0;
+            btnExit.TabStop = false;
+            btnExit.Text = "X";
+            btnExit.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // labelTitle
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Trebuchet MS", 18F);
-            label1.Location = new Point(329, 17);
-            label1.Name = "label1";
-            label1.Size = new Size(141, 29);
-            label1.TabIndex = 21;
-            label1.Text = "Product List";
+            labelTitle.AutoSize = true;
+            labelTitle.Font = new Font("Trebuchet MS", 18F);
+            labelTitle.Location = new Point(329, 17);
+            labelTitle.Name = "labelTitle";
+            labelTitle.Size = new Size(141, 29);
+            labelTitle.TabIndex = 0;
+            labelTitle.Text = "Product List";
             // 
-            // button6
+            // btnBack
             // 
-            button6.BackColor = Color.OliveDrab;
-            button6.Font = new Font("Stencil", 16F, FontStyle.Bold);
-            button6.ForeColor = Color.Ivory;
-            button6.Location = new Point(12, 12);
-            button6.Name = "button6";
-            button6.Size = new Size(39, 39);
-            button6.TabIndex = 35;
-            button6.TabStop = false;
-            button6.Text = "←";
-            button6.UseVisualStyleBackColor = false;
+            btnBack.BackColor = Color.OliveDrab;
+            btnBack.Font = new Font("Stencil", 16F, FontStyle.Bold);
+            btnBack.ForeColor = Color.Ivory;
+            btnBack.Location = new Point(12, 12);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(39, 39);
+            btnBack.TabIndex = 0;
+            btnBack.TabStop = false;
+            btnBack.Text = "←";
+            btnBack.UseVisualStyleBackColor = false;
+            // 
+            // labelQTY
+            // 
+            labelQTY.AutoSize = true;
+            labelQTY.Font = new Font("Trebuchet MS", 10F);
+            labelQTY.Location = new Point(103, 383);
+            labelQTY.Name = "labelQTY";
+            labelQTY.Size = new Size(73, 18);
+            labelQTY.TabIndex = 0;
+            labelQTY.Text = "Quantity :";
+            // 
+            // textBoxQTY
+            // 
+            textBoxQTY.Location = new Point(192, 382);
+            textBoxQTY.Name = "textBoxQTY";
+            textBoxQTY.Size = new Size(202, 23);
+            textBoxQTY.TabIndex = 4;
             // 
             // FormProduct
             // 
@@ -194,20 +214,22 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Menu;
             ClientSize = new Size(800, 450);
-            Controls.Add(button6);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(labelQTY);
+            Controls.Add(textBoxQTY);
+            Controls.Add(btnBack);
+            Controls.Add(labelCat);
+            Controls.Add(labelName);
+            Controls.Add(labelID);
+            Controls.Add(btnDelete);
+            Controls.Add(btnUpdate);
+            Controls.Add(btnInsert);
+            Controls.Add(btnFind);
+            Controls.Add(textBoxCat);
+            Controls.Add(textBoxName);
+            Controls.Add(textBoxID);
             Controls.Add(dataGridView1);
-            Controls.Add(button1);
-            Controls.Add(label1);
+            Controls.Add(btnExit);
+            Controls.Add(labelTitle);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormProduct";
             Text = "FormProduct";
@@ -217,19 +239,21 @@
         }
 
         #endregion
-        private Label label4;
-        private Label label3;
-        private Label label2;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private Label labelCat;
+        private Label labelName;
+        private Label labelID;
+        private Button btnDelete;
+        private Button btnUpdate;
+        private Button btnInsert;
+        private Button btnFind;
+        private TextBox textBoxCat;
+        private TextBox textBoxName;
+        private TextBox textBoxID;
         private DataGridView dataGridView1;
-        private Button button1;
-        private Label label1;
-        private Button button6;
+        private Button btnExit;
+        private Label labelTitle;
+        private Button btnBack;
+        private Label labelQTY;
+        private TextBox textBoxQTY;
     }
 }

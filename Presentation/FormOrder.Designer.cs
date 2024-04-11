@@ -28,58 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button6 = new Button();
-            label3 = new Label();
-            button2 = new Button();
-            textBox2 = new TextBox();
+            btnBack = new Button();
+            labelID = new Label();
+            btnAccept = new Button();
+            textBoxID = new TextBox();
             dataGridView1 = new DataGridView();
-            button1 = new Button();
-            label1 = new Label();
-            button3 = new Button();
+            btnExit = new Button();
+            labelTitle = new Label();
+            btnDecline = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // button6
+            // btnBack
             // 
-            button6.BackColor = Color.OliveDrab;
-            button6.Font = new Font("Stencil", 16F, FontStyle.Bold);
-            button6.ForeColor = Color.Ivory;
-            button6.Location = new Point(12, 12);
-            button6.Name = "button6";
-            button6.Size = new Size(39, 39);
-            button6.TabIndex = 44;
-            button6.TabStop = false;
-            button6.Text = "←";
-            button6.UseVisualStyleBackColor = false;
+            btnBack.BackColor = Color.OliveDrab;
+            btnBack.Font = new Font("Stencil", 16F, FontStyle.Bold);
+            btnBack.ForeColor = Color.Ivory;
+            btnBack.Location = new Point(12, 12);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(39, 39);
+            btnBack.TabIndex = 0;
+            btnBack.TabStop = false;
+            btnBack.Text = "←";
+            btnBack.UseVisualStyleBackColor = false;
             // 
-            // label3
+            // labelID
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Trebuchet MS", 10F);
-            label3.Location = new Point(127, 337);
-            label3.Name = "label3";
-            label3.Size = new Size(69, 18);
-            label3.TabIndex = 42;
-            label3.Text = "Order ID :";
+            labelID.AutoSize = true;
+            labelID.Font = new Font("Trebuchet MS", 10F);
+            labelID.Location = new Point(117, 337);
+            labelID.Name = "labelID";
+            labelID.Size = new Size(69, 18);
+            labelID.TabIndex = 0;
+            labelID.Text = "Order ID :";
             // 
-            // button2
+            // btnAccept
             // 
-            button2.BackColor = SystemColors.ButtonFace;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Trebuchet MS", 11F);
-            button2.Location = new Point(535, 315);
-            button2.Name = "button2";
-            button2.Size = new Size(90, 31);
-            button2.TabIndex = 41;
-            button2.Text = "Accept";
-            button2.UseVisualStyleBackColor = false;
+            btnAccept.BackColor = SystemColors.ButtonFace;
+            btnAccept.FlatStyle = FlatStyle.Flat;
+            btnAccept.Font = new Font("Trebuchet MS", 11F);
+            btnAccept.Location = new Point(535, 315);
+            btnAccept.Name = "btnAccept";
+            btnAccept.Size = new Size(90, 31);
+            btnAccept.TabIndex = 41;
+            btnAccept.Text = "Accept";
+            btnAccept.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // textBoxID
             // 
-            textBox2.Location = new Point(202, 336);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(202, 23);
-            textBox2.TabIndex = 39;
+            textBoxID.Location = new Point(192, 336);
+            textBoxID.Name = "textBoxID";
+            textBoxID.Size = new Size(202, 23);
+            textBoxID.TabIndex = 39;
             // 
             // dataGridView1
             // 
@@ -87,42 +87,43 @@
             dataGridView1.Location = new Point(12, 57);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(776, 200);
-            dataGridView1.TabIndex = 38;
+            dataGridView1.TabIndex = 0;
+            dataGridView1.TabStop = false;
             // 
-            // button1
+            // btnExit
             // 
-            button1.BackColor = Color.Firebrick;
-            button1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            button1.ForeColor = Color.MistyRose;
-            button1.Location = new Point(754, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(34, 39);
-            button1.TabIndex = 37;
-            button1.TabStop = false;
-            button1.Text = "X";
-            button1.UseVisualStyleBackColor = false;
+            btnExit.BackColor = Color.Firebrick;
+            btnExit.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            btnExit.ForeColor = Color.MistyRose;
+            btnExit.Location = new Point(754, 12);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(34, 39);
+            btnExit.TabIndex = 0;
+            btnExit.TabStop = false;
+            btnExit.Text = "X";
+            btnExit.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // labelTitle
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Trebuchet MS", 18F);
-            label1.Location = new Point(343, 17);
-            label1.Name = "label1";
-            label1.Size = new Size(119, 29);
-            label1.TabIndex = 36;
-            label1.Text = "Order List";
+            labelTitle.AutoSize = true;
+            labelTitle.Font = new Font("Trebuchet MS", 18F);
+            labelTitle.Location = new Point(343, 17);
+            labelTitle.Name = "labelTitle";
+            labelTitle.Size = new Size(119, 29);
+            labelTitle.TabIndex = 0;
+            labelTitle.Text = "Order List";
             // 
-            // button3
+            // btnDecline
             // 
-            button3.BackColor = SystemColors.ButtonFace;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Trebuchet MS", 11F);
-            button3.Location = new Point(535, 352);
-            button3.Name = "button3";
-            button3.Size = new Size(90, 31);
-            button3.TabIndex = 45;
-            button3.Text = "Decline";
-            button3.UseVisualStyleBackColor = false;
+            btnDecline.BackColor = SystemColors.ButtonFace;
+            btnDecline.FlatStyle = FlatStyle.Flat;
+            btnDecline.Font = new Font("Trebuchet MS", 11F);
+            btnDecline.Location = new Point(535, 352);
+            btnDecline.Name = "btnDecline";
+            btnDecline.Size = new Size(90, 31);
+            btnDecline.TabIndex = 45;
+            btnDecline.Text = "Decline";
+            btnDecline.UseVisualStyleBackColor = false;
             // 
             // FormOrder
             // 
@@ -130,14 +131,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Menu;
             ClientSize = new Size(800, 450);
-            Controls.Add(button3);
-            Controls.Add(button6);
-            Controls.Add(label3);
-            Controls.Add(button2);
-            Controls.Add(textBox2);
+            Controls.Add(btnDecline);
+            Controls.Add(btnBack);
+            Controls.Add(labelID);
+            Controls.Add(btnAccept);
+            Controls.Add(textBoxID);
             Controls.Add(dataGridView1);
-            Controls.Add(button1);
-            Controls.Add(label1);
+            Controls.Add(btnExit);
+            Controls.Add(labelTitle);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormOrder";
             Text = "FormOrder";
@@ -148,13 +149,13 @@
 
         #endregion
 
-        private Button button6;
-        private Label label3;
-        private Button button2;
-        private TextBox textBox2;
+        private Button btnBack;
+        private Label labelID;
+        private Button btnAccept;
+        private TextBox textBoxID;
         private DataGridView dataGridView1;
-        private Button button1;
-        private Label label1;
-        private Button button3;
+        private Button btnExit;
+        private Label labelTitle;
+        private Button btnDecline;
     }
 }
