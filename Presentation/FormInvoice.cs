@@ -49,7 +49,7 @@ namespace Presentation
 
         private void dataGridViewInvoice_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            textBoxID.Text = dataGridViewInvoice.Rows[e.RowIndex].Cells[8].Value.ToString();
+            textBoxID.Text = dataGridViewInvoice.Rows[e.RowIndex].Cells[7].Value.ToString();
         }
     }
 }
