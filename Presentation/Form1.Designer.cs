@@ -72,6 +72,7 @@
             btnPeople.TabStop = false;
             btnPeople.Text = "People";
             btnPeople.UseVisualStyleBackColor = false;
+            btnPeople.Click += btnPeople_Click;
             // 
             // btnProducts
             // 
@@ -85,6 +86,7 @@
             btnProducts.TabStop = false;
             btnProducts.Text = "Products";
             btnProducts.UseVisualStyleBackColor = false;
+            btnProducts.Click += btnProducts_Click;
             // 
             // btnOrders
             // 
@@ -98,6 +100,7 @@
             btnOrders.TabStop = false;
             btnOrders.Text = "Orders";
             btnOrders.UseVisualStyleBackColor = false;
+            btnOrders.Click += btnOrders_Click;
             // 
             // btnInvoices
             // 
@@ -111,6 +114,7 @@
             btnInvoices.TabStop = false;
             btnInvoices.Text = "Invoices";
             btnInvoices.UseVisualStyleBackColor = false;
+            btnInvoices.Click += btnInvoices_Click;
             // 
             // Form1
             // 

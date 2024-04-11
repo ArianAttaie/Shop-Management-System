@@ -191,6 +191,7 @@
             btnBack.TabStop = false;
             btnBack.Text = "←";
             btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // labelQTY
             // 
@@ -233,6 +234,7 @@
             Controls.Add(labelTitle);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormProduct";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormProduct";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

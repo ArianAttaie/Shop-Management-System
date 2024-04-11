@@ -51,6 +51,7 @@
             btnBack.TabStop = false;
             btnBack.Text = "←";
             btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // labelID
             // 
@@ -142,6 +143,7 @@
             Controls.Add(labelTitle);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormOrder";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormOrder";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

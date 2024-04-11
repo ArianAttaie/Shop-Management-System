@@ -131,6 +131,7 @@
             btnBack.TabStop = false;
             btnBack.Text = "←";
             btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // FormInvoice
             // 
@@ -149,6 +150,7 @@
             Controls.Add(labelTitle);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormInvoice";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormInvoice";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

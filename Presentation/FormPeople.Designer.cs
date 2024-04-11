@@ -208,6 +208,7 @@
             btnBack.TabStop = false;
             btnBack.Text = "←";
             btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // FormPeople
             // 
@@ -233,6 +234,7 @@
             Controls.Add(labelTitle);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormPeople";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormPeople";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
