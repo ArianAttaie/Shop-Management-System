@@ -11,10 +11,10 @@ namespace Data.Models
         #region CTOR
         public Product(string name, string category, decimal unitPrice, int quantity)
         {
-            name = Name;
-            category = Category;
-            unitPrice = UnitPrice;
-            quantity = Quantity;
+            Name = name;
+            Category = category;
+            UnitPrice = unitPrice;
+            Quantity = quantity;
         }
 
         #endregion

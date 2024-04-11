@@ -86,6 +86,7 @@
             // dataGridViewOrder
             // 
             dataGridViewOrder.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewOrder.Enabled = false;
             dataGridViewOrder.Location = new Point(12, 57);
             dataGridViewOrder.Name = "dataGridViewOrder";
             dataGridViewOrder.Size = new Size(776, 200);

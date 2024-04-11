@@ -11,9 +11,9 @@ namespace Data.Models
         #region CTOR
         public People(string fName, string lName, string title)
         {
-            fName = FirstName;
-            lName = FirstName;
-            title = Title;
+            FirstName = fName;
+            LastName = lName;
+            Title = title;
         }
 
         #endregion

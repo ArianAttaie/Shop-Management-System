@@ -152,6 +152,7 @@
             // dataGridViewProduct
             // 
             dataGridViewProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewProduct.Enabled = false;
             dataGridViewProduct.Location = new Point(12, 57);
             dataGridViewProduct.Name = "dataGridViewProduct";
             dataGridViewProduct.Size = new Size(776, 200);

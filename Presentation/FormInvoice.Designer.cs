@@ -71,6 +71,7 @@
             // dataGridViewInvoice
             // 
             dataGridViewInvoice.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewInvoice.Enabled = false;
             dataGridViewInvoice.Location = new Point(12, 57);
             dataGridViewInvoice.Name = "dataGridViewInvoice";
             dataGridViewInvoice.Size = new Size(776, 200);

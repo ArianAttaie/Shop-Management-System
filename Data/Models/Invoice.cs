@@ -11,13 +11,13 @@ namespace Data.Models
         #region CTOR
         public Invoice(string custFullName, long custID, string prdctName, int prdctID, int qty, decimal unitPrice, decimal total)
         {
-            custFullName = CustFullName;
-            custID = CustID;
-            prdctName = PrdctName;
-            prdctID = PrdctID;
-            qty = QTY;
-            unitPrice = UnitPrice;
-            total = TotalPrice;
+            CustFullName = custFullName;
+            CustID = custID;
+            PrdctName = prdctName;
+            PrdctID = prdctID;
+            QTY = qty;
+            UnitPrice = unitPrice;
+            TotalPrice = total;
         }
         #endregion
 

@@ -11,10 +11,10 @@ namespace Data.Models
         #region CTOR
         public Order(string custFullName, string prdctName, int qty, decimal unitPrice)
         {
-            custFullName = CustFullName;
-            prdctName = PrdctName;
-            qty = QTY;
-            unitPrice = UnitPrice;
+            CustFullName = custFullName;
+            PrdctName = prdctName;
+            QTY = qty;
+            UnitPrice = unitPrice;
         }
         #endregion
 
