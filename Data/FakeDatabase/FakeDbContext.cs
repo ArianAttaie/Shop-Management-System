@@ -9,11 +9,24 @@ namespace Data.FakeDatabase
 {
     public class FakeDbContext
     {
-        public static List<People> people = new List<People>();
+        public static List<People> people = new List<People>()
+        {
+            new People("Arian","Ataei", "Customer") { ID = 0 },
+            new People("Abbas","Kiarostami", "Staff") { ID = 1 }
+        };
 
-        public static List<Product> products = new List<Product>();
+        public static List<Product> products = new List<Product>()
+        {
+            new Product("Toshiba Satelite", "Laptop", 45000000, 3) { ID = 0 },
+            new Product("Dell Latitude", "Laptop", 80000000, 1) { ID = 1 },
+            new Product("SSD Lexar 256GB SATA", "Storage", 12000000, 5) { ID = 2 }
+        };
 
-        public static List<Order> orders = new List<Order>();
+        public static List<Order> orders = new List<Order>()
+        {
+            new Order("Arian Ataei", "Toshiba Satelite", 1, 45000000) { ID = 0 },
+            new Order("Arian Ataei", "SSD Lexar 256GB SATA", 2, 12000000) { ID = 1 }
+        };
 
         public static List<Invoice> invoices = new List<Invoice>();
     }
