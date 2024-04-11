@@ -46,5 +46,10 @@ namespace Presentation
             InvoiceServices iS = new InvoiceServices();
             dataGridViewInvoice.DataSource = iS.GetAll();
         }
+
+        private void dataGridViewInvoice_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            textBoxID.Text = dataGridViewInvoice.Rows[e.RowIndex].Cells[7].Value.ToString();
+        }
     }
 }

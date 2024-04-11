@@ -152,12 +152,13 @@
             // dataGridViewProduct
             // 
             dataGridViewProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewProduct.Enabled = false;
             dataGridViewProduct.Location = new Point(12, 57);
             dataGridViewProduct.Name = "dataGridViewProduct";
+            dataGridViewProduct.ReadOnly = true;
             dataGridViewProduct.Size = new Size(776, 200);
             dataGridViewProduct.TabIndex = 0;
             dataGridViewProduct.TabStop = false;
+            dataGridViewProduct.RowHeaderMouseClick += dataGridViewProduct_RowHeaderMouseClick;
             // 
             // btnExit
             // 

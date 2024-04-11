@@ -46,5 +46,14 @@ namespace Presentation
             ProductServices pS = new ProductServices();
             dataGridViewProduct.DataSource = pS.GetAll();
         }
+
+        private void dataGridViewProduct_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            textBoxID.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[4].Value.ToString();
+            textBoxName.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[0].Value.ToString();
+            textBoxCat.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[1].Value.ToString();
+            textBoxPrice.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[2].Value.ToString();
+            textBoxQTY.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[3].Value.ToString();
+        }
     }
 }

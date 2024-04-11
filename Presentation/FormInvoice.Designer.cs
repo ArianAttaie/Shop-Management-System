@@ -71,12 +71,13 @@
             // dataGridViewInvoice
             // 
             dataGridViewInvoice.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewInvoice.Enabled = false;
             dataGridViewInvoice.Location = new Point(12, 57);
             dataGridViewInvoice.Name = "dataGridViewInvoice";
+            dataGridViewInvoice.ReadOnly = true;
             dataGridViewInvoice.Size = new Size(776, 200);
             dataGridViewInvoice.TabIndex = 0;
             dataGridViewInvoice.TabStop = false;
+            dataGridViewInvoice.RowHeaderMouseClick += dataGridViewInvoice_RowHeaderMouseClick;
             // 
             // btnExit
             // 
