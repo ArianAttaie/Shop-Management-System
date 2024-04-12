@@ -52,5 +52,20 @@ namespace Presentation
         {
             textBoxID.Text = dataGridViewOrder.Rows[e.RowIndex].Cells[5].Value.ToString();
         }
+
+        private void btnAccept_Click(object sender, EventArgs e)
+        {
+            if (textBoxID.Text == "")
+            {
+                MessageBox.Show("Enter ID.");
+                return;
+            }
+            else
+            {
+                OrderServices oS = new OrderServices();
+                oS.Accept(long.Parse(textBoxID.Text));
+            }
+            btnLoad_Click(sender, e);
+        }
     }
 }

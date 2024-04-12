@@ -56,6 +56,7 @@ namespace Business.Services
             decimal total = order.TotalPrice;
 
             Invoice invoice = new Invoice(custFullName, custID, prdctName, prdctID, qty, unitPrice, total);
+            FakeDbContext.invoices.Add(invoice);
 
             FakeDbContext.orders.Remove(order);
         }
