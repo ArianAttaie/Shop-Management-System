@@ -69,7 +69,23 @@ namespace Presentation
                 int id = int.Parse(textBoxID.Text);
                 dataGridViewProduct.DataSource = pS.Get(id);
             }
-            
+
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            if (textBoxName.Text == "" || textBoxCat.Text == "" || textBoxPrice.Text == "" || textBoxQTY.Text == "")
+            {
+                MessageBox.Show("You need to fill the all the boxes in order to create any new product.\n" +
+                    "(There is no need to fill ID box.)");
+                return;
+            }
+            else
+            {
+                ProductServices pS = new ProductServices();
+                pS.Post(textBoxName.Text, textBoxCat.Text, decimal.Parse(textBoxPrice.Text), int.Parse(textBoxQTY.Text));
+            }
+            btnLoad_Click(sender, e);
         }
     }
 }

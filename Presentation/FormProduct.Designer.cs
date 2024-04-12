@@ -115,6 +115,7 @@
             btnInsert.TabIndex = 7;
             btnInsert.Text = "Insert";
             btnInsert.UseVisualStyleBackColor = false;
+            btnInsert.Click += btnInsert_Click;
             // 
             // btnFind
             // 

@@ -69,5 +69,21 @@ namespace Presentation
                 dataGridViewPeople.DataSource = pS.Get(id);
             }
         }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            if (textBoxFname.Text == "" || textBoxLname.Text == "" || textBoxTitle.Text == "")
+            {
+                MessageBox.Show("You need to fill the all the boxes in order to create any new person.\n" +
+                    "(There is no need to fill ID box.)");
+                return;
+            }
+            else
+            {
+                PeopleServices pS = new PeopleServices();
+                pS.Post(textBoxFname.Text, textBoxLname.Text, textBoxTitle.Text);
+            }
+            btnLoad_Click(sender, e);
+        }
     }
 }
