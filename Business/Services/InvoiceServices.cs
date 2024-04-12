@@ -23,9 +23,11 @@ namespace Business.Services
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public Invoice Get(long id)
+        public List<Invoice> Get(long id)
         {
-            return FakeDbContext.invoices.Where(e => e.ID == id).FirstOrDefault();
+            Invoice inv = FakeDbContext.invoices.Where(e => e.ID == id).FirstOrDefault();
+            List<Invoice> invL = new List<Invoice>() {inv};
+            return invL;
         }
     }
 }

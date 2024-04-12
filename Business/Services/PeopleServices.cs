@@ -23,9 +23,11 @@ namespace Business.Services
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public People Get(long id)
+        public List<People> Get(long id)
         {
-            return FakeDbContext.people.Where(e => e.ID == id).FirstOrDefault();
+            People p = FakeDbContext.people.Where(e => e.ID == id).FirstOrDefault();
+            List<People> pL = new List<People>() {p};
+            return pL;
         }
         /// <summary>
         /// Create / Insert
