@@ -55,5 +55,12 @@ namespace Presentation
             textBoxPrice.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[2].Value.ToString();
             textBoxQTY.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[3].Value.ToString();
         }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            ProductServices pS = new ProductServices();
+            int id = int.Parse(textBoxID.Text);
+            dataGridViewProduct.DataSource = pS.Get(id);
+        }
     }
 }

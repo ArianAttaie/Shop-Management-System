@@ -60,6 +60,7 @@
             btnFind.TabIndex = 2;
             btnFind.Text = "Find";
             btnFind.UseVisualStyleBackColor = false;
+            btnFind.Click += btnFind_Click;
             // 
             // textBoxID
             // 

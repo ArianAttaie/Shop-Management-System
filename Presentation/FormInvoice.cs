@@ -51,5 +51,12 @@ namespace Presentation
         {
             textBoxID.Text = dataGridViewInvoice.Rows[e.RowIndex].Cells[7].Value.ToString();
         }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            InvoiceServices pS = new InvoiceServices();
+            long id = long.Parse(textBoxID.Text);
+            dataGridViewInvoice.DataSource = pS.Get(id);
+        }
     }
 }

@@ -127,6 +127,7 @@
             btnFind.TabIndex = 6;
             btnFind.Text = "Find";
             btnFind.UseVisualStyleBackColor = false;
+            btnFind.Click += btnFind_Click;
             // 
             // textBoxCat
             // 
