@@ -57,9 +57,17 @@ namespace Presentation
 
         private void btnFind_Click(object sender, EventArgs e)
         {
-            PeopleServices pS = new PeopleServices();
-            long id = long.Parse(textBoxID.Text);
-            dataGridViewPeople.DataSource = pS.Get(id);
+            if (textBoxID.Text == "")
+            {
+                MessageBox.Show("Enter ID.");
+                return;
+            }
+            else
+            {
+                PeopleServices pS = new PeopleServices();
+                long id = long.Parse(textBoxID.Text);
+                dataGridViewPeople.DataSource = pS.Get(id);
+            }
         }
     }
 }

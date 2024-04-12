@@ -58,9 +58,18 @@ namespace Presentation
 
         private void btnFind_Click(object sender, EventArgs e)
         {
-            ProductServices pS = new ProductServices();
-            int id = int.Parse(textBoxID.Text);
-            dataGridViewProduct.DataSource = pS.Get(id);
+            if (textBoxID.Text == "")
+            {
+                MessageBox.Show("Enter ID.");
+                return;
+            }
+            else
+            {
+                ProductServices pS = new ProductServices();
+                int id = int.Parse(textBoxID.Text);
+                dataGridViewProduct.DataSource = pS.Get(id);
+            }
+            
         }
     }
 }
