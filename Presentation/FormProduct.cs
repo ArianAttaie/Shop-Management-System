@@ -83,7 +83,10 @@ namespace Presentation
             else
             {
                 ProductServices pS = new ProductServices();
-                pS.Post(textBoxName.Text, textBoxCat.Text, decimal.Parse(textBoxPrice.Text), int.Parse(textBoxQTY.Text));
+                pS.Post(textBoxName.Text, 
+                    textBoxCat.Text, 
+                    decimal.Parse(textBoxPrice.Text), 
+                    int.Parse(textBoxQTY.Text));
             }
             btnLoad_Click(sender, e);
         }
@@ -95,10 +98,36 @@ namespace Presentation
                 MessageBox.Show("Enter ID.");
                 return;
             }
+
+            else if (textBoxPrice.Text == "" || textBoxQTY.Text == "")
+            {
+                if (textBoxPrice.Text == "")
+                {
+                    ProductServices pS = new ProductServices();
+                    pS.Put(int.Parse(textBoxID.Text), 
+                        textBoxName.Text, 
+                        textBoxCat.Text, 
+                        default, 
+                        int.Parse(textBoxQTY.Text));
+                }
+                else if (textBoxQTY.Text == "")
+                {
+                    ProductServices pS = new ProductServices();
+                    pS.Put(int.Parse(textBoxID.Text), 
+                        textBoxName.Text, 
+                        textBoxCat.Text, 
+                        decimal.Parse(textBoxPrice.Text), 
+                        default);
+                }
+            }
             else
             {
                 ProductServices pS = new ProductServices();
-                pS.Put(int.Parse(textBoxID.Text), textBoxName.Text, textBoxCat.Text, decimal.Parse(textBoxPrice.Text), int.Parse(textBoxQTY.Text));
+                pS.Put(int.Parse(textBoxID.Text), 
+                    textBoxName.Text, 
+                    textBoxCat.Text, 
+                    decimal.Parse(textBoxPrice.Text), 
+                    int.Parse(textBoxQTY.Text));
             }
             btnLoad_Click(sender, e);
         }

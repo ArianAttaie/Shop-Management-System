@@ -82,7 +82,9 @@ namespace Presentation
             else
             {
                 PeopleServices pS = new PeopleServices();
-                pS.Post(textBoxFname.Text, textBoxLname.Text, textBoxTitle.Text);
+                pS.Post(textBoxFname.Text, 
+                    textBoxLname.Text, 
+                    textBoxTitle.Text);
             }
             btnLoad_Click(sender, e);
         }
@@ -97,7 +99,10 @@ namespace Presentation
             else
             {
                 PeopleServices pS = new PeopleServices();
-                pS.Put(long.Parse(textBoxID.Text), textBoxFname.Text, textBoxLname.Text, textBoxTitle.Text);
+                pS.Put(long.Parse(textBoxID.Text), 
+                    textBoxFname.Text,
+                    textBoxLname.Text, 
+                    textBoxTitle.Text);
             }
             btnLoad_Click(sender, e);
         }
