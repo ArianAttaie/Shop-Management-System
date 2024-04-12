@@ -54,5 +54,12 @@ namespace Presentation
             textBoxLname.Text = dataGridViewPeople.Rows[e.RowIndex].Cells[1].Value.ToString();
             textBoxTitle.Text = dataGridViewPeople.Rows[e.RowIndex].Cells[2].Value.ToString();
         }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            PeopleServices pS = new PeopleServices();
+            long id = long.Parse(textBoxID.Text);
+            dataGridViewPeople.DataSource = pS.Get(id);
+        }
     }
 }

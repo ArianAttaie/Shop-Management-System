@@ -122,6 +122,7 @@
             btnFind.TabIndex = 5;
             btnFind.Text = "Find";
             btnFind.UseVisualStyleBackColor = false;
+            btnFind.Click += btnFind_Click;
             // 
             // btnInsert
             // 
