@@ -69,7 +69,6 @@ namespace Presentation
                 int id = int.Parse(textBoxID.Text);
                 dataGridViewProduct.DataSource = pS.Get(id);
             }
-
         }
 
         private void btnInsert_Click(object sender, EventArgs e)
@@ -84,6 +83,21 @@ namespace Presentation
             {
                 ProductServices pS = new ProductServices();
                 pS.Post(textBoxName.Text, textBoxCat.Text, decimal.Parse(textBoxPrice.Text), int.Parse(textBoxQTY.Text));
+            }
+            btnLoad_Click(sender, e);
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (textBoxID.Text == "")
+            {
+                MessageBox.Show("Enter ID.");
+                return;
+            }
+            else
+            {
+                ProductServices pS = new ProductServices();
+                pS.Put(int.Parse(textBoxID.Text), textBoxName.Text, textBoxCat.Text, decimal.Parse(textBoxPrice.Text), int.Parse(textBoxQTY.Text));
             }
             btnLoad_Click(sender, e);
         }

@@ -49,7 +49,7 @@ namespace Business.Services
         /// <param name="category"></param>
         /// <param name="unitPrice"></param>
         /// <param name="quantity"></param>
-        public void Pus(int id, string name, string category, decimal unitPrice, int quantity)
+        public void Put(int id, string name, string category, decimal unitPrice, int quantity)
         {
             Product p = FakeDbContext.products.Where(e => e.ID == id).FirstOrDefault();
             p.Name = name == "" ? p.Name : name;
