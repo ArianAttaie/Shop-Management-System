@@ -97,7 +97,22 @@ namespace Presentation
             else
             {
                 PeopleServices pS = new PeopleServices();
-                pS.Put(long.Parse(textBoxID.Text),textBoxFname.Text, textBoxLname.Text, textBoxTitle.Text);
+                pS.Put(long.Parse(textBoxID.Text), textBoxFname.Text, textBoxLname.Text, textBoxTitle.Text);
+            }
+            btnLoad_Click(sender, e);
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (textBoxID.Text == "")
+            {
+                MessageBox.Show("Enter ID.");
+                return;
+            }
+            else
+            {
+                PeopleServices pS = new PeopleServices();
+                pS.Delete(long.Parse(textBoxID.Text));
             }
             btnLoad_Click(sender, e);
         }

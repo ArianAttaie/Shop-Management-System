@@ -161,6 +161,7 @@
             btnDelete.TabIndex = 8;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // labelID
             // 

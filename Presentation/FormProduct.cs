@@ -102,5 +102,20 @@ namespace Presentation
             }
             btnLoad_Click(sender, e);
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (textBoxID.Text == "")
+            {
+                MessageBox.Show("Enter ID.");
+                return;
+            }
+            else
+            {
+                ProductServices pS = new ProductServices();
+                pS.Delete(int.Parse(textBoxID.Text));
+            }
+            btnLoad_Click(sender, e);
+        }
     }
 }
