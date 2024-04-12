@@ -44,6 +44,7 @@ namespace Presentation
         private void btnLoad_Click(object sender, EventArgs e)
         {
             InvoiceServices iS = new InvoiceServices();
+            dataGridViewInvoice.DataSource = null;
             dataGridViewInvoice.DataSource = iS.GetAll();
         }
 

@@ -44,6 +44,7 @@ namespace Presentation
         private void btnLoad_Click(object sender, EventArgs e)
         {
             OrderServices oS = new OrderServices();
+            dataGridViewOrder.DataSource = null;
             dataGridViewOrder.DataSource = oS.GetAll();
         }
 

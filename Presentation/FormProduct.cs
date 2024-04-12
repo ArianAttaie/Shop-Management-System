@@ -44,6 +44,7 @@ namespace Presentation
         private void btnLoad_Click(object sender, EventArgs e)
         {
             ProductServices pS = new ProductServices();
+            dataGridViewProduct.DataSource = null;
             dataGridViewProduct.DataSource = pS.GetAll();
         }
 
