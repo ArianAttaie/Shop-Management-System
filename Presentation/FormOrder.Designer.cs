@@ -130,6 +130,7 @@
             btnDecline.TabIndex = 3;
             btnDecline.Text = "Decline";
             btnDecline.UseVisualStyleBackColor = false;
+            btnDecline.Click += btnDecline_Click;
             // 
             // btnLoad
             // 

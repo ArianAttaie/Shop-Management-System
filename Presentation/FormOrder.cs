@@ -67,5 +67,20 @@ namespace Presentation
             }
             btnLoad_Click(sender, e);
         }
+
+        private void btnDecline_Click(object sender, EventArgs e)
+        {
+            if (textBoxID.Text == "")
+            {
+                MessageBox.Show("Enter ID.");
+                return;
+            }
+            else
+            {
+                OrderServices oS = new OrderServices();
+                oS.Decline(long.Parse(textBoxID.Text));
+            }
+            btnLoad_Click(sender, e);
+        }
     }
 }
